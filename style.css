@@ -1,34 +1,117 @@
+@font-face {
+    font-family: roboto-mono;
+    src: url(fonts/Roboto_Mono/static/RobotoMono-Regular.ttf);
+}
 body {
     margin: 0;
-    font-family: roboto mono; src: url(Roboto_Mono/static/RobotoMono-Regular.ttf);
+    padding: 0;
+    font-family: roboto-mono;
+    }  
+.headertop {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+}   
+.navigation {
+    display: flex;
 }
-.header {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: #f4f5f5;
+.nav-items {
     position: relative;
 }
-ul {
-    list-style: none;
-    text-align: center;
+.nav-item:last-child{
+    padding-right: 25px;
 }
-li {
-    display: inline;
-    color: #55375a;
+.nav-item {
+    font-size: 15px;
+    font-family: roboto-mono;
+    color: white;
+    cursor: pointer;
+    padding: 0 20px;
+}
+
+.header {
+    padding: 0 20px;
+    background-color: #f4f5f5;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    height: 100px;
+}
+.header-nav {
+    display: flex;
+}
+/* .header-items {
+    position: relative;
+} */
+.header-item {
     font-size: 22px;
+    cursor: pointer;
 }
-li:not(:last-child) {
+.header-item:hover {
+    color: grey;
+}
+.header-item-1:hover ~ .header-item-1-dropdown{
+    display: block;
+}
+.header-item-1-dropdown {
+    position: fixed;
+    height: 250px;
+    opacity: 75%;
+    background-color: white;
+    display: none;
+    left: 2px;
+    right: 2px;
+    top: 150px;
+    z-index: 1;
+    animation-name: zoomin;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+.header-item-2:hover ~ .header-item-2-dropdown{
+    display: block;
+}
+.header-item-2-dropdown {
+    position: fixed;
+    height: 250px;
+    opacity: 75%;
+    background-color: white;
+    display: none;
+    left: 2px;
+    right: 2px;
+    top: 150px;
+    z-index: 1;
+    animation-name: zoomin;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+.header-item-3:hover ~ .header-item-3-dropdown{
+    display: block;
+}
+.header-item-3-dropdown{
+    position: fixed;
+    height: 250px;
+    opacity: 75%;
+    background-color: white;
+    display: none;
+    left: 2px;
+    right: 2px;
+    top: 150px;
+    z-index: 1;
+    animation-name: zoomin;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+.header-item:not(:last-child) {
     margin-right: 60px;
 }
-.nav-label {
-    position: absolute;
-    right: 20px;
-    top: 50px;
-    transform: translateY(-50%);
-}
-#id {
-    display: none;
-}
+
 .slider {
     width: 100%;
     height: 500px;
@@ -44,22 +127,35 @@ li:not(:last-child) {
    background-color: white;
    border: none;
    left: 50%;
-   top: 50%;
-   transform: translate(-50%, 50%);
+   top: 70%;
+   transform: translate(-50%, -50%);
    padding: 30px 45px;
    border-radius: 50px;
    font-size: 20px;
    cursor: pointer;
    font-family: roboto-mono;
-   animation-name: spimbottomup;
+   animation-name: spimbottomup;   
    animation-duration: 1s;
-   animation-timing-function: cubic-bezier(0,.78,1,.39);
+   animation-timing-function: linear;
+   transition: all;
+   transition-duration: 0.2s;
+   text-transform: uppercase;
+   box-shadow: 0px 10px 10px #423b33;
+}
+.slider-button:active {
+    box-shadow: 0px 5px 10px #423b33;
+    transform: translate(-50%, -45%);
 }
 @keyframes spimbottomup {
-    0% {top: 54%; opacity: 0;}
-    100% {top: 50%; opacity: 1;}
+    0% {top: 74%; opacity: 0;}
+    100% {top: 70%; opacity: 1;}
 }
-
+@keyframes zoomin {
+    0% {opacity: 0;
+         transform: scale(1);}
+    100% {opacity: 75%; 
+         transform: scale(1);}
+}
 .men {
     margin-top: 90px;
     background-image: linear-gradient(90deg, rgba(169,217,246,1) 0%, rgba(167,214,242,0.9136029411764706) 58%, rgba(214,244,250,1) 100%);
@@ -85,6 +181,7 @@ li:not(:last-child) {
     padding: 20px 30px;
     border-radius: 50px;
     font-size: 20px;
+    font-family: roboto-mono;
     cursor: pointer;
     left: 100px;
     top: 170px;
@@ -115,6 +212,7 @@ li:not(:last-child) {
 }
 #woman {
     position: absolute;
+    font-family: roboto-mono;
     left: 730px;
     top: 100px;
 }
@@ -125,6 +223,7 @@ li:not(:last-child) {
     padding: 20px 30px;
     border-radius: 50px;
     font-size: 20px;
+    font-family: roboto-mono;
     cursor: pointer;
     top: 175px;
     left: 730px;
@@ -160,6 +259,7 @@ li:not(:last-child) {
     padding: 20px 30px;
     border-radius: 50px;
     font-size: 20px;
+    font-family: roboto-mono;
     cursor: pointer;
     left: 100px;
     top: 170px;
@@ -169,5 +269,62 @@ li:not(:last-child) {
     animation-delay: 1.2s;
     animation-fill-mode: forwards;
 }
+#line {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background-color: white
+}
+h3 {
+    font-size: 15px;
+    font-family: roboto-mono;
+    cursor: pointer;
+}
+h3:hover{
+    border-bottom: solid 1px black;
+}
 
+.footer {
+    padding: 0 20px;
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    position: relative;
+}
+.foot-container {
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
 
+}
+.foots {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.foot-nav {
+     font-size: 18px;
+     margin-top: 20px;
+     
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li:not(:last-child) {
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-family: roboto-mono;
+    cursor: pointer;
+}
+li:hover {
+    border-bottom: solid white 1px;
+}
