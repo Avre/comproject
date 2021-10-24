@@ -9,7 +9,7 @@ body {
     }  
 .headertop {
     width: 100%;
-    height: 50px;
+    height: 20px;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -35,7 +35,7 @@ body {
 
 .header {
     padding: 0 20px;
-    background-color: #f4f5f5;
+    background-color: #fbfbfb;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -117,11 +117,316 @@ body {
     height: 500px;
     opacity: 80%;
 }
-.slider-image {
+/* .slider-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
+} */
+.collage {
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat (10, 1fr);
+    grid-template-rows: repeat(8, 62px);
+    grid-gap: 2px;
+    padding-bottom: 10px;
+
 }
+.mon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fae19d;
+    border: solid black 2px;
+    border-radius: 5px;
+    transition: 1s;
+}
+.mon:hover {
+    transform: scale(1.2);
+    box-shadow: grey;
+    z-index: 2;
+}
+.one {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.one {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#glass1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.two {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 5; 
+}
+.two {
+    width: 100%;
+    height: 100%;
+    position: relative; 
+}
+#video1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.three {
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 3; 
+}
+.three{
+    width: 100%;
+    height: 100%;
+    position: relative; 
+}
+#skirt{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.four {
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: red;
+    font-size: 20px;
+    font-family: roboto-mono;
+    font-weight: 600;
+}
+
+.five {
+    grid-column-start: 9;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 4; 
+}
+.five{
+    width: 100%;
+    height: 100%;
+    position: relative; 
+}
+#dressgirls{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.six {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 6;   
+}
+.six{
+    width: 100%;
+    height: 100%;
+    position: relative; 
+}
+#cglass1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.seven {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5; 
+    background-color: blue;
+    font-size: 20px;
+    font-family: roboto-mono;
+    font-weight: 600;
+}
+.eight {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 5; 
+}
+.eight{
+    width: 100%;
+    height: 100%;
+    position: relative; 
+}
+#bcoats{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.nine {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 5; 
+}
+.nine{
+    width: 100%;
+    height: 100%;
+    position: relative; 
+}
+#suit{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.ten {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 9; 
+}
+.ten{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#bsuits{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.eleven {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 7; 
+}
+.eleven{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#dress{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.twelve {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 5;
+    grid-row-end: 7; 
+}
+.twelve{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#girls{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.therteen {
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 5;
+    grid-row-end: 9; 
+}
+.therteen{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#video2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.fourteen {
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 5;
+    grid-row-end: 6; 
+    background-color: yellow;
+    font-size: 20px;
+    font-family: roboto-mono;
+    font-weight: 600;
+}
+.fifteen {
+    grid-column-start: 9;
+    grid-column-end: 11;
+    grid-row-start: 4;
+    grid-row-end: 6; 
+}
+.fifteen{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#collection{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.sixteen {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 8; 
+    background-color:green;
+    font-size: 20px;
+    font-family: roboto-mono;
+    font-weight: 600;
+}
+.seventeen {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 7;
+    grid-row-end: 9; 
+}
+.seventeen{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#mcoats {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.eighteen {
+    grid-column-start: 8;
+    grid-column-end: 11;
+    grid-row-start: 6;
+    grid-row-end: 8; 
+}
+.eighteen {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#glass2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+/* 
 .slider-button {
    position: absolute;
    background-color: white;
@@ -141,7 +446,7 @@ body {
    transition-duration: 0.2s;
    text-transform: uppercase;
    box-shadow: 0px 10px 10px #423b33;
-}
+} */
 .slider-button:active {
     box-shadow: 0px 5px 10px #423b33;
     transform: translate(-50%, -45%);
@@ -240,6 +545,7 @@ body {
     width: 100%;
     height: 50%;
     position: relative;
+    margin-bottom: 30px;
 }
 .photo-kid {
     margin-left: 700px;
@@ -274,7 +580,7 @@ body {
     justify-content: center;
     width: 100%;
     height: 50px;
-    background-color: white
+    background-color: #fae19d
 }
 h3 {
     font-size: 15px;
@@ -286,17 +592,15 @@ h3:hover{
 }
 
 .footer {
-    padding: 0 20px;
     width: 100%;
     height: 300px;
     background-color: black;
     display: flex;
-    justify-content: space-between;
-    align-items: right;
+    justify-content: space-around;
+    align-items: flex-start;
     position: relative;
 }
 .foot-container {
-    display: flex;
     padding-left: 10px;
     padding-right: 10px;
     margin: 0;
@@ -304,6 +608,7 @@ h3:hover{
 }
 .foots {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     color: white;
 }
@@ -313,7 +618,6 @@ h3:hover{
      margin-top: 20px;
      
 }
-
 ul {
     list-style: none;
     padding: 0;
