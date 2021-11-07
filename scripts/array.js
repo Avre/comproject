@@ -50,7 +50,7 @@
 // 6 - მოცემული გაქვთ სტრინგი “I'm gonna pop some tags only got twenty dollars in my
 // pocket”. შექმენით ამ სტრინგში მოცემული სიმბოლოების მასივი.
 // let arr = "I'm gonna pop some tags only got twenty dollars in my pocket";
-// console.log(arr.split(''));
+
 
 
 // 7 - მასივიდან ამოიღეთ ბოლო ელემენტი და დაამატეთ თავში. - ვეღარ მოვასწარი ვაკეთებ
