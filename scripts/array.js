@@ -49,11 +49,17 @@
 
 // 6 - მოცემული გაქვთ სტრინგი “I'm gonna pop some tags only got twenty dollars in my
 // pocket”. შექმენით ამ სტრინგში მოცემული სიმბოლოების მასივი.
-// let arr = "I'm gonna pop some tags only got twenty dollars in my pocket";
+// let a = "I'm gonna pop some tags only got twenty dollars in my pocket";
+
 
 
 
 // 7 - მასივიდან ამოიღეთ ბოლო ელემენტი და დაამატეთ თავში. - ვეღარ მოვასწარი ვაკეთებ
+// let a = [ 'Tesla', 'luxury', 'Electric', 'Vehicles', 'from', 2003 ]
+// let b = a.pop();
+// let c = a.unshift(b)
+// console.log(a)
+
 
 
 // 8 - გაქვთ 3 სხვადასხვა მასივი. გააერთიანეთ ეს მასივები ერთმანეთში
